@@ -1,4 +1,4 @@
-test
+
 # NodeJS_Template
 
 This application was originally a barebones template of [node-js-getting-started](https://github.com/heroku/node-js-getting-started) provided by Heroku. It has been revised to accomodate the needs of students taking the CSE341 course at BYU-Idaho.
