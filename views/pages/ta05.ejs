@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include ../includes/header.ejs %>
+  <style>
+      body{
+          color: <%= styles.color %>;
+          background-color: <%= styles.backgroundColor %>;
+       }
+      
+
+  </style>
+
+  
+</head>
+
+<body >
+  <% include ../includes/nav.ejs %>
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1>
+          <%= title %>
+        </h1>
+        <form action="/ta05/changeStyle" method="post">
+            <label for="textColor"></label>
+            <input type="text" id="textColor" name="textColor">
+            <label for="backgroundColor"></label>
+            <input type="text" id="backgroundColor"  name="backgroundColor">
+            <button type="submit">Update Styles</button>
+        </form>
+        <p> Counter Total: <%= counter %></p>
+        <a href="/ta05/counter/increment"><button>Increment Counter</button></a>
+        <a href="/ta05/counter/decrement"><button>Decrement Counter</button></a>
+        
+        <a href="/ta05/reset"><button>Reset</button></a>
+
+<%= JSON.stringify(styles)%>
+        
+
+
+      </div>
+    </div>
+    <div class="container">
+
+    </div>
+
+
+</body>
+
+</html>
